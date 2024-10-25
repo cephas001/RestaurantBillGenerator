@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "PeterProgram_backend": {
+      "main": "src/PeterProgram_backend/main.mo",
+      "type": "motoko"
+    },
+    "PeterProgram_frontend": {
+      "dependencies": [
+        "PeterProgram_backend"
+      ],
+      "source": [
+        "src/PeterProgram_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
